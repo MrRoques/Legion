@@ -267,9 +267,9 @@
                 couponDesc = quantity + duration
                 
                 handler.open({
-                    name: "REJOINS LA LEGION",
+                    name: "LÉGION CLUB",
                     description: couponDesc,
-                    panelLabel: "REJOINDRE LA LEGION"
+                    panelLabel: "Rejoindre la Légion"
                 });
 
                 
