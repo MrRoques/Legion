@@ -143,10 +143,10 @@
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function (e) {
         handler.open({
-          name: "REJOINS LA LEGION",
+          name: "LÉGION CLUB",
           email: urlEmail,
-          description: validCoupon ? couponDesc : "Profite d'un essai gratuit au Legion Club puis verouille ton abonnement a 29,99€ par mois.",
-          panelLabel: "REJOINDRE LA LEGION",
+          description: validCoupon ? couponDesc : "Profite d'un essai gratuit au Legion Club <br/> Puis verouille ton abonnement à 29,99€ par mois.",
+          panelLabel: "Rejoindre la Légion",
           currency: ('eur' || 'usd').toUpperCase()
         });
 
