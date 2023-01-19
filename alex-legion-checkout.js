@@ -50,7 +50,7 @@
 
   // TODO: read the loader html from another file
   function initLoadingScreen() {
-    jQuery('body').append('<div class="launchPassLoader" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: #00000063">   <div style="display: flex; justify-content: center; align-items: center;">     <div style="width: 500px; height: 130px; background-color: white; text-align: center; margin-top: 100px; border-radius: 8px; padding-top: 10px;">       <div>         <h2>           Generating invite. If you arenâ€™t redirected shortly, check your email. ðŸš€         </h2>            <span>            Please wait...         </span>        </div>       <div class="la-line-scale la-2x" style="margin: 20px auto;">         <div style="background-color: white;"></div>         <div style="background-color: white;"></div>         <div style="background-color: white;"></div>         <div style="background-color: white;"></div>         <div style="background-color: white;"></div>       </div>     </div>   </div> </div>')
+    jQuery('body').append('<div class="launchPassLoader" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: #00000063">   <div style="display: flex; justify-content: center; align-items: center;">     <div style="width: 500px; height: 130px; background-color: white; text-align: center; margin-top: 100px; border-radius: 8px; padding-top: 10px;">       <div>         <h2>           CHARGEMENT EN COURS - BIENVENUE DANS LA LEGION - TERRE SAINTE DES AMBITIONS         </h2>            <span>            VEUILLEZ PATIENTER...         </span>        </div>       <div class="la-line-scale la-2x" style="margin: 20px auto;">         <div style="background-color: white;"></div>         <div style="background-color: white;"></div>         <div style="background-color: white;"></div>         <div style="background-color: white;"></div>         <div style="background-color: white;"></div>       </div>     </div>   </div> </div>')
   }
 
   function initEmbed() {
@@ -143,10 +143,10 @@
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function (e) {
         handler.open({
-          name: "La LÃ©gion",
+          name: "REJOINS LA LEGION",
           email: urlEmail,
-          description: validCoupon ? couponDesc : "â‚¬1.00 / monthly",
-          panelLabel: "Subscribe Now",
+          description: validCoupon ? couponDesc : "Profite d'un essai gratuit au Legion Club puis verouille ton abonnement a 29,99€ par mois.",
+          panelLabel: "REJOINDRE LA LEGION",
           currency: ('eur' || 'usd').toUpperCase()
         });
 
@@ -267,9 +267,9 @@
                 couponDesc = quantity + duration
                 
                 handler.open({
-                    name: "La LÃ©gion",
+                    name: "REJOINS LA LEGION",
                     description: couponDesc,
-                    panelLabel: "Subscribe Now"
+                    panelLabel: "REJOINDRE LA LEGION"
                 });
 
                 
